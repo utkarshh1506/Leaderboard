@@ -1,0 +1,245 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.navbar h1{
+  font-weight: 600;
+  font-size: 50px;
+  background: linear-gradient(180deg, whitesmoke -5.09%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add-user{
+  display: flex;
+  gap: 15px;
+}
+
+.add-user input{
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding-left: 15px;
+}
+
+.add-user button{
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background: linear-gradient(267deg, whitesmoke 3.09%, black 100%);
+  color: white;
+}
+
+.add-user button:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+  background:linear-gradient(180deg, whitesmoke -5.09%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.user-select{
+
+  display: flex;
+  gap: 10px;
+}
+
+.user-select select{
+  padding: 10px 20px;
+  border-radius: 50px ;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.claim-btn button{
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  transform-origin: top ;
+  cursor: pointer;
+}
+
+.claim-btn:hover{
+  transform: scale(1.03);
+  transform: 1.30;
+  
+}
+
+.user-select select:focus{
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1.02);
+}
+
+.user-select select:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.claim-result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Container */
+.leaderboard-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* 🏆 Leaderboard Heading */
+.leaderboard-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* 🥇 Top 3 Layout */
+.top-three {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align like a podium */
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Wrapper to apply ordering */
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Base top card style */
+.top-card {
+  width: 160px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #007bff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Podium hover effect */
+.top-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Rank-specific styles with fixed order */
+.rank-1 {
+  order: 2;
+  background: #fff3cd;
+  border-color: #ffc107;
+  height: 180px;
+}
+
+.rank-2 {
+  order: 1;
+  background: #e2e3e5;
+  border-color: #adb5bd;
+  height: 140px;
+}
+
+.rank-3 {
+  order: 3;
+  background: #d4edda;
+  border-color: #28a745;
+  height: 120px;
+}
+
+/* Rank circle */
+.rank-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #59a2f0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Top card text */
+.user-details h3 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.user-details p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* 🔽 Remaining user cards */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Regular leaderboard card */
+.leaderboard-card {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leaderboard-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+.user-details-drop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100%;
+}
