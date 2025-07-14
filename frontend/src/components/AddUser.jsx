@@ -6,7 +6,7 @@ const AddUser = ({ refreshUsers }) => {
 
   const handleAdd = async () => {
     if (!name.trim()) return;
-    await axios.post("http://localhost:1000/api/users", { name });
+    await axios.post("https://leaderboard-gchk.onrender.com/api/users", { name });
     setName("");
     refreshUsers();
   };

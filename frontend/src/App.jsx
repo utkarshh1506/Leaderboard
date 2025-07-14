@@ -12,7 +12,7 @@ function App() {
   const [lastClaim, setLastClaim] = useState(null);
 
   const fetchUsers = async () => {
-    const res = await axios.get('http://localhost:1000/api/users');
+    const res = await axios.get('https://leaderboard-gchk.onrender.com/api/users');
     console.log("🔄 Fetched users:", res.data); 
     setUsers(res.data);
   };
@@ -24,7 +24,7 @@ function App() {
   const handleClaim = async () => {
     if (!selectedUser) return alert('Please select a user');
 
-    const res = await axios.post(`http://localhost:1000/api/claim/${selectedUser}`);
+    const res = await axios.post(`https://leaderboard-gchk.onrender.com/api/claim/${selectedUser}`);
     setLastClaim(res.data);
     await fetchUsers(); 
   };
