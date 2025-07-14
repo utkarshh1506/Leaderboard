@@ -243,3 +243,39 @@ body{
   align-items: center;
   gap: 100%;
 }
+
+.card-list-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  position: relative;
+  scrollbar-width: none;
+}
+
+.card-list-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 100px; /* Leave space for fixed-last */
+}
+
+/* Fixed bottom card (like #10 or #11) */
+.fixed-last {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 12px;
+  width: 90%; /* Control width */
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
